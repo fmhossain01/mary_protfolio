@@ -25,7 +25,6 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 .nav_brand h3{
     font-size: 35px;
@@ -61,20 +60,38 @@ nav{
 /* ============================ Nav bar End Here ==========================  */
 /* ============================ Hero Section Start Here ==========================  */
 #hero{
-    padding: 50px 0;
     background: #fff8f3;
     position: relative;
     height: 837px;
     width: 100%;
-
 }
 .hero_wrapper{
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px 0;
 }
+
 .hero_text{
     padding: 10px 0;
-    width: 50%;
+    width: 554px;
+    position: relative;
+}
+.hero_text::after {
+    content: "Developer";
+    position: absolute;
+    font-size: 100px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    color: rgba(24, 24, 24, 0.155);
+    top: 160px;
+    left: -350px;
+
+    transform: translateY(-50%) rotate(-90deg);
+    transform-origin: center;
+
+    z-index: 0;
+    pointer-events: none;
 }
 .hero_text h3{
     font-size: 35px;
@@ -96,28 +113,12 @@ nav{
     color: #757575;
 }
 .hero_img{
-    position: absolute;
-    top: 0;
-    right: 0;
     width: 50%;
-
 }
 .hero_img img{
     width: 100%;
-    object-fit: cover;
+    height: auto;
+    display: block;
 }
-.hero_btext{
-    position: absolute;
-    top: 12%;
-    left: -15%;
-    rotate: 270deg;
-    
-}
-.hero_btext span{
-    rotate: 90deg;
-    font-size: 100px;
-    font-weight: 700;
-    letter-spacing: 3%;
-    color: rgba(24, 24, 24, 0.155);
-}
+
 /* ============================ Hero Section End Here ==========================  */
