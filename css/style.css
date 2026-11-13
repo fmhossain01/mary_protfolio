@@ -65,7 +65,7 @@ nav{
     height: 837px;
     width: 100%;
 }
-.hero_wrapper{
+.hero_wrapper {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -73,9 +73,10 @@ nav{
 }
 
 .hero_text{
-    padding: 10px 0;
+    padding: 50px 0;
     width: 554px;
     position: relative;
+    z-index: 20;
 }
 .hero_text::after {
     content: "Developer";
@@ -112,13 +113,21 @@ nav{
     line-height: 30px;
     color: #757575;
 }
-.hero_img{
-    width: 50%;
+/* Hero Image Position Fix */
+
+.hero{
+    position: relative;
 }
-.hero_img img{
-    width: 100%;
-    height: auto;
-    display: block;
+
+.hero::after{
+    content: url(../images/Analysis\ output\ 1.png);
+    position: absolute;
+    top: 0;
+    width: 85%;
+    right: 0;
+    z-index: 5;
 }
+
+
 
 /* ============================ Hero Section End Here ==========================  */
